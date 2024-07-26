@@ -138,8 +138,6 @@ class QuranTap extends StatelessWidget {
               height: 8,
             ),
             itemBuilder: (context, index) =>
-                Table(border: TableBorder.all(color: Colors.black), children: [
-              TableRow(children: [
                 InkWell(
                   onTap: () {
                     Navigator.of(context).pushNamed(
@@ -154,9 +152,6 @@ class QuranTap extends StatelessWidget {
                     textAlign: TextAlign.center,
                   ),
                 ),
-                Text('')
-              ])
-            ]),
             itemCount: surasName.length,
           ),
         ),
@@ -164,20 +159,7 @@ class QuranTap extends StatelessWidget {
           "ddd",
           // style: GoogleFonts.elMessiri(),
         ),
-        Table(
-          children: [
-            TableRow(children: [
-              Text('data'),
-              Text('data'),
-              Text('data'),
-            ]),
-            TableRow(children: [
-              Text('data'),
-              Text('data'),
-              Text('data'),
-            ]),
-          ],
-        )
+
       ],
     );
   }
